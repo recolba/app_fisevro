@@ -1,0 +1,21 @@
+body {
+    background-image: url(fundo.jpeg);
+	background-repeat: no-repeat;
+    background-color:#A9A9A9;			
+	background-size: 100%;
+}
+
+.container {
+	width: 300px;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 40px;
+}
+
+.bemvindo {
+    width: 850px; 
+    margin-left: auto;
+    margin-right: auto;
+	color: black;
+	font-size: 60px;
+}
