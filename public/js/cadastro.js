@@ -1,4 +1,4 @@
-function fazPost(url, body) {
+function fazCadastro(url, body) {
     console.log("Body=", body)
     let request = new XMLHttpRequest()
     request.open("POST", url, true)
@@ -7,14 +7,14 @@ function fazPost(url, body) {
 
     request.onload = function() {
         console.log(this.responseText)
-        if (request.status === 200)
-            return alert("Usuário cadastrado com sucesso!");
-        else (request.status === 400) 
-            return alert("Novo Usuário não cadastrado! Tente novamente.");
+        if (request.status === 200) {
+            return alert("Usuário cadastrado com sucesso!");   
+        } else {
+            return alert("Cadastro não realizado!");
+        }
     }
-
     return request.responseText
-}
+};
 
 function cadastrarUsuario() {
     event.preventDefault()
@@ -30,8 +30,6 @@ function cadastrarUsuario() {
         "email": email,
         "password": senha
     }
-
-
-
-    fazPost(url, body)
+    
+    fazCadastro(url, body)
 };

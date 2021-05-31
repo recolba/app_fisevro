@@ -1,4 +1,4 @@
-function fazPost(url, body) {
+function fazLogin(url, body) {
     console.log("Body=", body)
     let request = new XMLHttpRequest()
     request.open("POST", url, true)
@@ -7,17 +7,16 @@ function fazPost(url, body) {
 
     request.onload = function() {
         console.log(this.responseText)
-        if (request.status === 200)
-            return alert("Login realizado com sucesso!");
-            window.open("views/index_user.ejs")
-            if (senha === "admin" && email === "admin@gmail.com")
-                window.location.href = "views/index_admin.ejs   "
-        else (request.status === 400) 
-            return alert("Senha ou email incorretos! Por favor verificar.");
+        if (request.status === 200 && request.email === "adminteste2@gmail.com") {
+            return window.location.href = "/index_adm"
+        }
+        if (request.status === 200) {
+            return window.location.href = "/index_user"
+        } else {
+             return alert("Login ou Senha Incorretos!");
+        }
     }
-
-    return request.responseText
-}
+};
 
 function logarUsuario() {
     event.preventDefault()
@@ -33,6 +32,5 @@ function logarUsuario() {
     }
 
 
-
-    fazPost(url, body)
+    fazLogin(url, body)
 };

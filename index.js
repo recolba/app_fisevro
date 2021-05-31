@@ -20,6 +20,18 @@ app.get('', (req, res) => {
         res.render('index')
 })
 
+app.get('/index_user', (req, res) => {
+        res.render('index_user')
+})
+
+app.get('/index_adm', (req, res) => {
+        res.render('index_adm')
+})
+
+app.get('/index_profile', (req, res) => {
+        res.render('index_profile')
+})
+
 
 require('./controllers/authController')(app);
 require('./controllers/projectController')(app);

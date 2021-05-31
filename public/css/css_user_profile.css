@@ -1,0 +1,167 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+
+  background: #58af9b;
+background: linear-gradient(to right, rgb(116, 74, 214), #58af9b);
+  color: white;
+  height:1000px;
+  width:2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  text-align: center;
+}
+
+.profile-pic {
+  height: 6rem;
+  width: 6rem;
+  object-fit: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.logo-pic {
+    height: 6rem;
+    width: 6rem;
+    object-fit: center;
+  }
+
+.location p {
+  display: inline-block;
+}
+
+.location svg {
+  vertical-align: middle;
+}
+
+.stats {
+  display: flex;
+}
+
+.stats .col-4 {
+  width: 10rem;
+  text-align: center;
+}
+
+.heading {
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.title-primary {
+    font-family:helvetica;
+    color: #fff;
+    font-size: 48px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+
+#header {
+    font-family:helvetica;
+    background-color:rgb(116, 74, 214);
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+  
+
+#main {
+    font-family:helvetica;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+#nav {
+    font-family:helvetica;
+    text-align: center;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:800px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    font-family:helvetica;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    font-family:helvetica;
+    background-color:rgb(116, 74, 214);
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+
+
+
+
+.title-primary {
+    font-family:helvetica;
+    color: #fff;
+    font-size: 48px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.icon{
+    width:30px;
+    margin-right:5px;
+    vertical-align: middle;
+    }
+
+
+#busca {
+margin:0 auto;
+padding:0;
+}
+#txtbusca {
+border:0px solid #222;
+background:#EEE;
+width:260px;
+height:23px;
+margin:0 auto;
+padding:5px 0 5px 5px;
+float:left; // posição do campo
+line-height:36px; // altura da linha
+}
+#btnBusca {
+background:#00cccc;
+position:relative;
+border:0px solid #222;
+color:#FFF; 
+margin:0 auto;
+padding:10px;
+border:0 none;
+font-size:11px;
+font-weight:bold;
+text-transform:uppercase;
+}
+#btnBusca:hover {
+background:#99cccc; 
+}
+
+
+

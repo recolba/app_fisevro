@@ -6,7 +6,7 @@
         padding:5px;
     }
       
-    }
+    
     #main {
         font-family:helvetica;
         display: flex;
@@ -91,4 +91,6 @@ text-transform:uppercase;
 #btnBusca:hover {
 background:#99cccc; 
 }
+
+
 
