@@ -8,9 +8,11 @@ function fazCadastro(url, body) {
     request.onload = function() {
         console.log(this.responseText)
         if (request.status === 200) {
-            return alert("Usuário cadastrado com sucesso!");   
+            alert("Usuário cadastrado com sucesso!");
+            return window.location.href = '/'
         } else {
-            return alert("Cadastro não realizado!");
+            alert("Cadastro não realizado!");
+            return window.location.href = '/'
         }
     }
     return request.responseText

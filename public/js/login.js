@@ -13,7 +13,8 @@ function fazLogin(url, body) {
         if (request.status === 200) {
             return window.location.href = "/index_user"
         } else {
-             return alert("Login ou Senha Incorretos!");
+            alert("Login ou Senha Incorretos!");
+            return window.location.href = '/'
         }
     }
 };

@@ -57,4 +57,5 @@ const token = jwt.sign({ id: user.id }, authConfig.secret, {
     });
 });
 
+
 module.exports = app => app.use('/auth', router); 

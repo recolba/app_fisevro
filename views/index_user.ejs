@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/css_user_adm.css">
 <html>
 <head>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -13,14 +13,9 @@
 
 <div class="nav" id="nav">
 <img class = imglogin src="img/LOGO.png" alt=""><br><br><br>
-<p><a href="index_profile"><img class=icon src="img/perfil.png">Perfil</a></p>
+<p><a href="/index_profile"><img class=icon src="img/perfil.png">Perfil</a></p>
 <br>
-<p><a href=""><img class=icon src="img/like.png">Avaliar</a></p>
-<br>
-<p><a href=""><img class=icon src="img/info.png">Informações</a></p>
-<br>
-<p><a href=""><img class=icon src="img/config.png">Configurações</a></p>
-<br><br><br><br><br>
+
 <p><a href="/"><img class=icon src="img/exit.png">Sair</a></p>
 </div>
 
@@ -32,20 +27,76 @@
             <input id="btnBusca" type="submit" value="Ok"/>
         </form>
         </div>
-        
+        <br>
+        <br><br>
 <h2>Principais séries, filmes e livros para você</h2>
 <br>
+
 <h3><img class=icon src="img/series.png" >Séries</h3>
 <br>
-<p>Imagens séries...</p>
+<div class="container">
+    <div class="row">
+        <div class="card_img">
+            <img src="img/serie1.png"  onclick="myFunction1()" class="small_img">   
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>      
+        </div>
+         <div class="card_img">
+            <img src="img/series2.png" onclick="myFunction2()" class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+        <div class="card_img">
+            <img src="img/serie3.png" onclick="myFunction3()" class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+    </div>
+</div>
 <br><br><br>
 <h3><img class=icon src="img/film.png" >Filmes</h3>
 <br>
-<p>Imagens filmes...</p>
+<div class="container">
+    <div class="row">
+        <div class="card_img">
+            <img src="img/filme1.png" onclick="myFunction4()" class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+        <div class="card_img">
+            <img src="img/filme2.png" onclick="myFunction5()" class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+        <div class="card_img">
+            <img src="img/filme3.png" onclick="myFunction6()"class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+    </div>
+</div>
 <br><br><br>
 <h3><img class=icon src="img/book.png" >Livros</h3>
 <br>
-<p>Imagens livros...</p>
+<div class="container">
+    <div class="row">
+        <div class="card_img">
+            <img src="img/livro1.png" onclick="myFunction7()" class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+        <div class="card_img">
+            <img src="img/livro2.png" onclick="myFunction8()" class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+        <div class="card_img">
+            <img src="img/livro3.png" onclick="myFunction9()" class="small_img">
+            <input id="txtbusca" name="q" type="text" value="" placeholder="Digite o seu comentário..." />
+            <i onclick="myFunctionLike(this)" class="fa fa-thumbs-up"></i>            
+        </div>
+    </div>
+</div>
 <br>
 
 
@@ -54,6 +105,50 @@
 <div class="footer" id="footer">
 FISEVRO
 </div>
+
+<script>
+    function myFunction1() {
+      alert("O novo drama Breaking Bad narra a história de Walter White (Bryan Cranston), um humilde professor de química que vê sua vida se transformar quando descobre ser portador de um câncer terminal. Com um passado brilhante como pesquisador, Walter amarga agora uma terrível situação financeira trabalhando como professor em uma escola de ensino médio. Com seu modesto salário sustenta a esposa Skyler (Anna Gunn) e seu filho Walter Jr. (RJ Mitte), que sofre de paralisia cerebral. Walter fica desesperado ao perceber que sua família irá passar necessidades após sua morte e decide que fará qualquer coisa para que eles não sofram com a falta de dinheiro. Impulsionado pelo medo e por desejo de oferecer dignidade à Skyler e Jr. ele começa a usar suas habilidades em química a favor do crime, montando um laboratório de drogas para financiar seus anseios. Com uma trama intensa e emocionante a série mostra que nesse enredo não existem vilões nem mocinhos.");
+    }
+
+    function myFunction2() {
+      alert("Lucifer: A série gira em torno de Lucifer Morningstar (interpretado por Tom Ellis), o Diabo em pessoa, que renuncia o seu trono no Inferno para tirar umas férias na cidade de Los Angeles, onde administra sua própria boate (a “Lux”) e se torna consultor da polícia.");
+    }
+
+    function myFunction3() {
+      alert("Invencivel: A série do Amazon Prime Video conta a história de Mark Grayson, filho adolescente do maior herói da Terra, que começa a descobrir seus poderes. Decidido a seguir os passos de seu pai, o Omni-Man, o rapaz decide usar suas novas habilidades para salvar o mundo como o herói Invencível");
+    }
+
+    function myFunction4() {
+      alert("A menina que roubava livros: Durante a Segunda Guerra Mundial, uma jovem garota chamada Liesel Meminger sobrevive fora de Munique lendo os livros que ela rouba. Ajudada por seu pai adotivo, ela aprende a ler e partilhar livros com seus amigos, incluindo um judeu que vive na clandestinidade em sua casa. Enquanto não está lendo ou estudando, ela faz algumas tarefas para a mãe e brinca com o amigo Rudy.");
+    }
+
+    function myFunction5() {
+      alert("O Exterminador do Futuro: Disfarçado de humano, o assassino conhecido como o Exterminador (Arnold Schwarzenegger) viaja de 2029 a 1984 para matar Sarah Connor (Linda Hamilton). Enviado para proteger Sarah está Kyle Reese (Michael Biehn), que divulga a chegada do Skynet, um sistema de inteligência artificial que detonará um holocausto nuclear. Sarah é o alvo porque a Skynet sabe que seu futuro filho comandará a luta contra eles. Com o implacável Exterminador os perseguindo, Sarah e Kyle tentam sobreviver.");
+    }
+
+    function myFunction6() {
+      alert("A barraca do beijo: Melhores amigos desde sempre, Elle (Joey King) e Lee (Joel Courtney) têm a inventiva ideia de gerenciar uma barraca do beijo durante um evento da escola. Para fazer da proposta um sucesso, a garota tenta convencer o galã Noah (Jacob Elordi), seu crush e irmão mais velho de Lee, a participar da brincadeira. Ele mostra-se irredutível, mas os dois acabam se aproximando como nunca, o que estremece a amizade de Elle e Lee.");
+    }
+
+    function myFunction7() {
+      alert("Naruto Shippuden: Dois anos e meio se passaram após a partida de Naruto Uzumaki e Jiraiya de Konohagakure, para um treinamento a parte com Naruto. Logo ao voltar à vila os primeiros a encontrá-lo foram Sakura Haruno e Konohamaru Sarutobi. Agora Naruto e seus amigos não tem apenas que se preocupar com o resgate de Sasuke, mas também com uma organização chamada Akatsuki, que está atrás dos jinchūriki (ninjas que carregam um Bijū em seus corpos, junto a isso inúmeros outros acontecimentos ocorrem ao longo da série.");
+    }
+
+    function myFunction8() {
+      alert("Sword Art Online: Em 2022, um jogo de realidade virtual chamado Sword Art Online acaba de ser lançado. Entre os jogadores está Kirito, um jovem que acredita ser capaz de zerá-lo sozinho. O único problema é muitos dos participantes não conseguiram sair do game, já que precisam vencer todas as fases do jogo.");
+    }
+
+    function myFunction9() {
+      alert("Demon Slaye: Em Kimetsu no Yaiba, Tanjiro, um bondoso jovem que ganha a vida vendendo carvão descobre que sua família foi massacrada por um demônio. E, para piorar, Nezuko, sua irmã mais nova e única sobrevivente, também acabou transformada em um demônio. Arrasado com essa sombria realidade, Tanjiro decide se tornar um matador de demônios para fazer sua irmã voltar a ser humana e para destruir o demônio que matou seus entes queridos.");
+    }
+
+    function myFunctionLike(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+
+
+</script>
 
 </body>
 </html>

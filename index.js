@@ -32,9 +32,8 @@ app.get('/index_profile', (req, res) => {
         res.render('index_profile')
 })
 
-
 require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./controllers/userController')(app);
 require('./routes/routesFisevro')(app);
 
 // Liten on port 3000
